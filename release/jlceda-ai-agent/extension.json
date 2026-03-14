@@ -1,0 +1,32 @@
+{
+  "name": "jlceda-ai-agent",
+  "displayName": "JLCEDA AI Agent",
+  "version": "0.1.0",
+  "description": "AI assistant for schematic and PCB workflows in JLCEDA Pro.",
+  "main": "./dist/index.js",
+  "engines": {
+    "jlc-eda-pro": ">=2.3.0"
+  },
+  "categories": ["AI", "Productivity"],
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "jlceda-ai-agent.openChat",
+        "title": "AI Agent: Open Chat"
+      },
+      {
+        "command": "jlceda-ai-agent.openSettings",
+        "title": "AI Agent: Settings"
+      },
+      {
+        "command": "jlceda-ai-agent.analyzeDocument",
+        "title": "AI Agent: Analyze Current Document"
+      },
+      {
+        "command": "jlceda-ai-agent.autoPlaceSelection",
+        "title": "AI Agent: Auto Place Selection"
+      }
+    ]
+  }
+}

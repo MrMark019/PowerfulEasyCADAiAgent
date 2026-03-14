@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light;
+  --panel-bg: #f3f2ed;
+  --card-bg: #fffdfa;
+  --text: #1e1f24;
+  --accent: #006b5f;
+  --border: #d5d0c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "PingFang SC", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top right, rgba(0, 107, 95, 0.12), transparent 30%),
+    linear-gradient(180deg, #f8f6ef, var(--panel-bg));
+}
+
+.panel {
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.history {
+  height: 55vh;
+  overflow: auto;
+  margin: 12px 0;
+  padding: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+}
+
+.msg {
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+}
+
+.msg.user {
+  background: #d7ece8;
+}
+
+.msg.assistant {
+  background: #fff;
+}
+
+textarea,
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font: inherit;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}

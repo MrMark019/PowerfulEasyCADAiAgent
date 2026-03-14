@@ -1,0 +1,20 @@
+{
+  "name": "jlceda-ai-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI agent plugin scaffold for JLCEDA Pro.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.5.0"
+  },
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build:ts": "tsc -p tsconfig.json",
+    "build": "node scripts/build.mjs",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
