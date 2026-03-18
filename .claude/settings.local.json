@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(cd:*)",
+      "Bash(unzip -l D:/MarkLab/ai_agent_crucuit/agent/release/jlceda-ai-agent/artifacts/jlceda-ai-agent.eext)",
+      "Bash(unzip -p \"D:/MarkLab/ai_agent_crucuit/agent/release/jlceda-ai-agent-sdk/build/dist/jlceda-ai-agent.eext\" extension.json)",
+      "Bash(find D:/MarkLab/ai_agent_crucuit/agent/release/pro-api-sdk -name *.json -type f)"
+    ]
+  }
+}
